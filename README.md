@@ -17,3 +17,5 @@ Load preprocessed data into working environment and run meta-analysis, e.g. in m
 load("all.RData") 
 source("main.R")
 ```
+
+The output contains selected features and detailed results of cross-validation runs.

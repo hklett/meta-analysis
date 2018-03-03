@@ -11,3 +11,9 @@ biocLite("limma", "org.Hs.eg.db") # bioconductor packages
 install.packages("foreach", "doMC", "e1071", "caret", "ROCR") #cran packages
 ```
 
+Load preprocessed data into working environment and run meta-analysis, e.g. in main.R 
+
+```
+load("all.RData") 
+source("main.R")
+```

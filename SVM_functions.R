@@ -130,7 +130,7 @@ pdac_svm <- function(mat,
     MAT  <- lapply(1:ncol(mat), function(x) mat[, x, drop=F])
     cores <- detectCores()
   }
-  cat("CV=", CV, "\n")
+  #cat("CV=", CV, "\n")
   
   cv_results  <- mclapply(1:length(MAT), function(i){
     train  <- do.call(cbind, MAT[-i]); colnames(train) <- unlist(lapply(MAT[-i], colnames))

@@ -140,7 +140,7 @@ diff_analysis <- function(limma, design, ann=T, method=c("ls", "robust")[1], sor
   fit2 <- eBayes(fit)
   genes <- topTable(fit2, coef=2, adjust="BH",number=n, sort.by=sort)
   if(ann) genes <- add_annot(genes)
-  print(dim(genes))
+  #print(dim(genes))
   return(genes)
 }
 

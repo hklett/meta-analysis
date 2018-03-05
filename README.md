@@ -16,12 +16,18 @@ biocLite("limma", "org.Hs.eg.db") # bioconductor packages
 install.packages("foreach", "doMC", "e1071", "caret", "ROCR") #cran packages
 ```
 
-## Run meta-analysis
-In R environment, load preprocessed data into working environment and run meta-analysis, e.g. in main.R. See function files for required data format and parameter specifications.
+## Run CV with feature selection in single data set
+In R environment, load preprocessed data, e.g. M1 into working environment and run singleCV, e.g., in mainSingle.R. See function files for required data format and parameter specifications
 
 ```
-load("all.RData") 
-source("main.R")
+source("mainSingle.R")
+```
+
+## Run meta-analysis
+In R environment, load preprocessed data into working environment and run meta-analysis, e.g. in mainMeta.R. See function files for required data format and parameter specifications.
+
+```
+source("mainMeta.R")
 ```
 
 The output contains selected features and detailed results of cross-validation runs.

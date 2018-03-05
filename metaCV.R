@@ -29,7 +29,7 @@ metaCV <- function(data.list,
     #rank features according to feature selection on each single training set
     rank.list <- feature.select(train)
     
-    #Optimize the number of selected genes from rank.list in inner CV
+    #Optimize the number of selected genes from rank.list in inner LOOCV
     #loop over different sizes n of features
     count=1
     out.list <- list()

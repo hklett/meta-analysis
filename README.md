@@ -23,7 +23,7 @@ In R environment, load preprocessed data, e.g. M1 into working environment and r
 source("mainSingle.R")
 ```
 
-## Run meta-analysis
+## Run meta-analysis of multiple data sets
 In R environment, load preprocessed data into working environment and run meta-analysis, e.g. in mainMeta.R. See function files for required data format and parameter specifications.
 
 ```
